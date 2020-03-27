@@ -4,5 +4,13 @@
   "description": "Learn Protractor",
   "main": "index.js",
   "author": "Fengwei Wang",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "protractor": "^5.4.3"
+  },
+  "scripts": {
+    "start-webdriver-manager": "webdriver-manager start",
+    "test": "protractor conf.js",
+    "update-webdriver-manager": "yarn start-webdriver-manager && webdriver-manager update"
+  }
 }
